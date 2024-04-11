@@ -1,0 +1,313 @@
+@import "./lib/bootstrap-datepicker.min.css";
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Pretendard-Thin.eot");
+  src: url("../fonts/Pretendard-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Thin.woff2") format("woff2"), url("../fonts/Pretendard-Thin.woff") format("woff"), url("../fonts/Pretendard-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/Pretendard-ExtraLight.eot");
+  src: url("../fonts/Pretendard-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-ExtraLight.woff2") format("woff2"), url("../fonts/Pretendard-ExtraLight.woff") format("woff"), url("../fonts/Pretendard-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Pretendard-Light.eot");
+  src: url("../fonts/Pretendard-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Light.woff2") format("woff2"), url("../fonts/Pretendard-Light.woff") format("woff"), url("../fonts/Pretendard-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Pretendard-Regular.eot");
+  src: url("../fonts/Pretendard-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Regular.woff2") format("woff2"), url("../fonts/Pretendard-Regular.woff") format("woff"), url("../fonts/Pretendard-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Pretendard-Medium.eot");
+  src: url("../fonts/Pretendard-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Medium.woff2") format("woff2"), url("../fonts/Pretendard-Medium.woff") format("woff"), url("../fonts/Pretendard-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Pretendard-SemiBold.eot");
+  src: url("../fonts/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-SemiBold.woff2") format("woff2"), url("../fonts/Pretendard-SemiBold.woff") format("woff"), url("../fonts/Pretendard-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Pretendard-Bold.eot");
+  src: url("../fonts/Pretendard-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Bold.woff2") format("woff2"), url("../fonts/Pretendard-Bold.woff") format("woff"), url("../fonts/Pretendard-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/Pretendard-ExtraBold.eot");
+  src: url("../fonts/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("../fonts/Pretendard-ExtraBold.woff") format("woff"), url("../fonts/Pretendard-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Pretendard-Black.eot");
+  src: url("../fonts/Pretendard-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Black.woff2") format("woff2"), url("../fonts/Pretendard-Black.woff") format("woff"), url("../fonts/Pretendard-Black.ttf") format("truetype");
+  font-display: swap;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; /*font: inherit;*/
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.34;
+  background-color: #f3f5f6;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Pretendard", sans-serif;
+  font-size: "16px";
+}
+
+header,
+footer,
+section,
+article,
+div,
+table,
+ul,
+ol,
+a,
+button,
+form,
+input,
+select,
+textarea,
+em,
+i,
+p,
+dl,
+dt,
+dd,
+span,
+strong {
+  font-family: "Pretendard", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+form,
+fieldset,
+img {
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  color: #091440;
+  font-size: inherit;
+  text-decoration: none; /* transition:all ease-in-out .3s; */
+}
+
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+select,
+textarea,
+button {
+  color: #091440;
+  font-size: inherit;
+  border: 0;
+  font-family: "Pretendard", sans-serif;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+textarea[readonly] {
+  cursor: default;
+}
+
+iframe {
+  width: 100%; /*height:auto;*/
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* bootstrap custtom */
+.table {
+  margin-bottom: 0;
+}
+
+#mb_login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

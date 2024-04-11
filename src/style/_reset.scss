@@ -1,0 +1,214 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; /*font: inherit;*/
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.34;
+  background-color: #f3f5f6;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: map-get($font-settings, "name"), sans-serif;
+  font-size: map-get($font-settings, "size");
+}
+header,
+footer,
+section,
+article,
+div,
+table,
+ul,
+ol,
+a,
+button,
+form,
+input,
+select,
+textarea,
+em,
+i,
+p,
+dl,
+dt,
+dd,
+span,
+strong {
+  font-family: map-get($font-settings, "name"), sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+form,
+fieldset,
+img {
+  border: 0;
+}
+button {
+  cursor: pointer;
+  background: none;
+}
+a {
+  color: #091440;
+  font-size: inherit;
+  text-decoration: none; /* transition:all ease-in-out .3s; */
+}
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+input,
+select,
+textarea,
+button {
+  color: #091440;
+  font-size: inherit;
+  border: 0;
+  font-family: map-get($font-settings, "name"), sans-serif;
+}
+textarea {
+  width: 100%;
+  resize: none;
+}
+textarea[readonly] {
+  cursor: default;
+}
+iframe {
+  width: 100%; /*height:auto;*/
+  border: 0;
+}
+label {
+  cursor: pointer;
+}
+
+/* bootstrap custtom */
+.table {
+  margin-bottom: 0;
+}

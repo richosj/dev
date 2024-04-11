@@ -1,0 +1,15 @@
+// 모든 변수
+@use "sass:map";
+@use "sass:math";
+
+$font-settings: (
+  name: "Pretendard",
+  size: "16px",
+);
+
+$grid-breaking: (
+  xs: "1167px",
+);
+
+// 이미지경로
+$img: "/common/images/";
